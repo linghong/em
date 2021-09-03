@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Options | em</title>
+	<title>LinkProps | em</title>
 	<meta name="description" content="Documentation for em">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -51,16 +51,13 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../modules/selectors.html">selectors</a>
+					<a href="../modules/_components_link_native_.html">&quot;components/Link.native&quot;</a>
 				</li>
 				<li>
-					<a href="../modules/selectors.getdescendants.html">getDescendants</a>
-				</li>
-				<li>
-					<a href="selectors.getdescendants.options.html">Options</a>
+					<a href="_components_link_native_.linkprops.html">LinkProps</a>
 				</li>
 			</ul>
-			<h1>Interface Options</h1>
+			<h1>Interface LinkProps</h1>
 		</div>
 	</div>
 </header>
@@ -71,7 +68,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">Options</span>
+						<span class="target">LinkProps</span>
 					</li>
 				</ul>
 			</section>
@@ -81,8 +78,9 @@
 						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="selectors.getdescendants.options.html#filterfunction" class="tsd-kind-icon">filter<wbr>Function</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="selectors.getdescendants.options.html#recur" class="tsd-kind-icon">recur</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_components_link_native_.linkprops.html#charlimit" class="tsd-kind-icon">char<wbr>Limit</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_components_link_native_.linkprops.html#label" class="tsd-kind-icon">label</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_components_link_native_.linkprops.html#simplepath" class="tsd-kind-icon">simple<wbr>Path</a></li>
 							</ul>
 						</section>
 					</div>
@@ -91,22 +89,32 @@
 			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
-					<a name="filterfunction" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> filter<wbr>Function</h3>
-					<div class="tsd-signature tsd-kind-icon">filter<wbr>Function<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>child<span class="tsd-signature-symbol">: </span><a href="_types.child.child.html" class="tsd-signature-type">Child</a>, context<span class="tsd-signature-symbol">: </span><a href="../modules/_types.context.html" class="tsd-signature-type">Context</a>, simplePath<span class="tsd-signature-symbol">: </span><a href="../modules/_types.simplepath.html" class="tsd-signature-type">SimplePath</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span></div>
+					<a name="charlimit" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> char<wbr>Limit</h3>
+					<div class="tsd-signature tsd-kind-icon">char<wbr>Limit<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/linghong/em/blob/83bba41/src/selectors/getDescendants.ts#L8">src/selectors/getDescendants.ts:8</a></li>
+							<li>Defined in <a href="https://github.com/linghong/em/blob/cf93d2b/src/components/Link.native.tsx#L10">src/components/Link.native.tsx:10</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
-					<a name="recur" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> recur</h3>
-					<div class="tsd-signature tsd-kind-icon">recur<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></div>
+					<a name="label" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> label</h3>
+					<div class="tsd-signature tsd-kind-icon">label<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/linghong/em/blob/83bba41/src/selectors/getDescendants.ts#L7">src/selectors/getDescendants.ts:7</a></li>
+							<li>Defined in <a href="https://github.com/linghong/em/blob/cf93d2b/src/components/Link.native.tsx#L11">src/components/Link.native.tsx:11</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+					<a name="simplepath" class="tsd-anchor"></a>
+					<h3>simple<wbr>Path</h3>
+					<div class="tsd-signature tsd-kind-icon">simple<wbr>Path<span class="tsd-signature-symbol">:</span> <a href="../modules/_types.simplepath.html" class="tsd-signature-type">SimplePath</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/linghong/em/blob/cf93d2b/src/components/Link.native.tsx#L12">src/components/Link.native.tsx:12</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -115,13 +123,8 @@
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="current tsd-kind-module tsd-is-not-exported">
-						<a href="../modules/selectors.html">selectors</a>
-						<ul>
-							<li class="current tsd-kind-module tsd-parent-kind-module">
-								<a href="../modules/selectors.getdescendants.html">get<wbr>Descendants</a>
-							</li>
-						</ul>
+					<li class="current tsd-kind-module">
+						<a href="../modules/_components_link_native_.html">&quot;components/<wbr>Link.native&quot;</a>
 					</li>
 				</ul>
 			</nav>
@@ -130,20 +133,26 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported">
-						<a href="selectors.getdescendants.options.html" class="tsd-kind-icon">Options</a>
+						<a href="_components_link_native_.linkprops.html" class="tsd-kind-icon">Link<wbr>Props</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
-								<a href="selectors.getdescendants.options.html#filterfunction" class="tsd-kind-icon">filter<wbr>Function</a>
+								<a href="_components_link_native_.linkprops.html#charlimit" class="tsd-kind-icon">char<wbr>Limit</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
-								<a href="selectors.getdescendants.options.html#recur" class="tsd-kind-icon">recur</a>
+								<a href="_components_link_native_.linkprops.html#label" class="tsd-kind-icon">label</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+								<a href="_components_link_native_.linkprops.html#simplepath" class="tsd-kind-icon">simple<wbr>Path</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="../modules/selectors.getdescendants.html#getdescendants" class="tsd-kind-icon">get<wbr>Descendants</a>
+					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/_components_link_native_.html#style" class="tsd-kind-icon">style</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/_components_link_native_.html#link" class="tsd-kind-icon">Link</a>
 					</li>
 				</ul>
 			</nav>
