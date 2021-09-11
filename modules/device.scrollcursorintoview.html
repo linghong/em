@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>&quot;util/initialState.native&quot; | em</title>
+	<title>scrollCursorIntoView | em</title>
 	<meta name="description" content="Documentation for em">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -51,10 +51,13 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="_util_initialstate_native_.html">&quot;util/initialState.native&quot;</a>
+					<a href="device.html">device</a>
+				</li>
+				<li>
+					<a href="device.scrollcursorintoview.html">scrollCursorIntoView</a>
 				</li>
 			</ul>
-			<h1>Module &quot;util/initialState.native&quot;</h1>
+			<h1>Module scrollCursorIntoView</h1>
 		</div>
 	</div>
 </header>
@@ -67,9 +70,9 @@
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="_util_initialstate_native_.html#getlocal" class="tsd-kind-icon">get<wbr>Local</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_util_initialstate_native_.html#initialstate" class="tsd-kind-icon">initial<wbr>State</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_util_initialstate_native_.html#initialthoughts" class="tsd-kind-icon">initial<wbr>Thoughts</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="device.scrollcursorintoview.html#iselementinviewport" class="tsd-kind-icon">is<wbr>Element<wbr>InViewport</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="device.scrollcursorintoview.html#scrollcursorintoview" class="tsd-kind-icon">scroll<wbr>Cursor<wbr>Into<wbr>View</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="device.scrollcursorintoview.html#scrollintoviewifneeded" class="tsd-kind-icon">scroll<wbr>Into<wbr>View<wbr>IfNeeded</a></li>
 							</ul>
 						</section>
 					</div>
@@ -78,86 +81,86 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-					<a name="getlocal" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Local</h3>
+					<a name="iselementinviewport" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> is<wbr>Element<wbr>InViewport</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Local<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></li>
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Element<wbr>InViewport<span class="tsd-signature-symbol">(</span>el<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/linghong/em/blob/d76797d/src/util/initialState.native.ts#L10">src/util/initialState.native.ts:10</a></li>
+									<li>Defined in <a href="https://github.com/linghong/em/blob/d76797d/src/device/scrollCursorIntoView.ts#L2">src/device/scrollCursorIntoView.ts:2</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Safely gets a value from localStorage if it is in the environment.</p>
+									<p>Returns true if the given element is visible within the vertical viewport.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>key: <span class="tsd-signature-type">string</span></h5>
+									<h5>el: <span class="tsd-signature-type">HTMLElement</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 						</li>
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="initialstate" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> initial<wbr>State</h3>
+					<a name="scrollcursorintoview" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> scroll<wbr>Cursor<wbr>Into<wbr>View</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">initial<wbr>State<span class="tsd-signature-symbol">(</span>created<span class="tsd-signature-symbol">?: </span><a href="_types.timestamp.html" class="tsd-signature-type">Timestamp</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a></li>
+						<li class="tsd-signature tsd-kind-icon">scroll<wbr>Cursor<wbr>Into<wbr>View<span class="tsd-signature-symbol">(</span>delay<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/linghong/em/blob/d76797d/src/util/initialState.native.ts#L80">src/util/initialState.native.ts:80</a></li>
+									<li>Defined in <a href="https://github.com/linghong/em/blob/d76797d/src/device/scrollCursorIntoView.ts#L17">src/device/scrollCursorIntoView.ts:17</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Generates the initial state of the application.</p>
+									<p>Scrolls the cursor into view if needed. If there is no cursor, scroll to top. Web only.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> created: <a href="_types.timestamp.html" class="tsd-signature-type">Timestamp</a><span class="tsd-signature-symbol"> = timestamp()</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> delay: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="initialthoughts" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> initial<wbr>Thoughts</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">initial<wbr>Thoughts<span class="tsd-signature-symbol">(</span>created<span class="tsd-signature-symbol">?: </span><a href="_types.timestamp.html" class="tsd-signature-type">Timestamp</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types.thoughtsinterface.html" class="tsd-signature-type">ThoughtsInterface</a></li>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+					<a name="scrollintoviewifneeded" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> scroll<wbr>Into<wbr>View<wbr>IfNeeded</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">scroll<wbr>Into<wbr>View<wbr>IfNeeded<span class="tsd-signature-symbol">(</span>el<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/linghong/em/blob/d76797d/src/util/initialState.native.ts#L16">src/util/initialState.native.ts:16</a></li>
+									<li>Defined in <a href="https://github.com/linghong/em/blob/d76797d/src/device/scrollCursorIntoView.ts#L8">src/device/scrollCursorIntoView.ts:8</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Generates an initial ThoughtsInterface with the root and em contexts.</p>
+									<p>Scrolls the given element to the top 1/3 of the screen.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> created: <a href="_types.timestamp.html" class="tsd-signature-type">Timestamp</a><span class="tsd-signature-symbol"> = timestamp()</span></h5>
+									<h5>el: <span class="tsd-signature-type">HTMLElement</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="_types.thoughtsinterface.html" class="tsd-signature-type">ThoughtsInterface</a></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -166,21 +169,50 @@
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="current tsd-kind-module">
-						<a href="_util_initialstate_native_.html">&quot;util/initial<wbr>State.native&quot;</a>
+					<li class="current tsd-kind-module tsd-is-not-exported">
+						<a href="device.html">device</a>
+						<ul>
+							<li class=" tsd-kind-module tsd-parent-kind-module">
+								<a href="device.asyncfocus.html">async<wbr>Focus</a>
+							</li>
+							<li class=" tsd-kind-module tsd-parent-kind-module">
+								<a href="device.clearselection.html">clear<wbr>Selection</a>
+							</li>
+							<li class=" tsd-kind-module tsd-parent-kind-module">
+								<a href="device.download.html">download</a>
+							</li>
+							<li class=" tsd-kind-module tsd-parent-kind-module">
+								<a href="device.getcaretpositiondetails.html">get<wbr>Caret<wbr>Position<wbr>Details</a>
+							</li>
+							<li class=" tsd-kind-module tsd-parent-kind-module">
+								<a href="device.gettextcontentfromhtml.html">get<wbr>Text<wbr>Content<wbr>FromHTML</a>
+							</li>
+							<li class=" tsd-kind-module tsd-parent-kind-module">
+								<a href="device.modalcleanup.html">modal<wbr>Cleanup</a>
+							</li>
+							<li class="current tsd-kind-module tsd-parent-kind-module">
+								<a href="device.scrollcursorintoview.html">scroll<wbr>Cursor<wbr>Into<wbr>View</a>
+							</li>
+							<li class=" tsd-kind-module tsd-parent-kind-module">
+								<a href="device.selectnexteditable.html">select<wbr>Next<wbr>Editable</a>
+							</li>
+							<li class=" tsd-kind-module tsd-parent-kind-module">
+								<a href="device.splitatselection.html">split<wbr>AtSelection</a>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<a href="_util_initialstate_native_.html#getlocal" class="tsd-kind-icon">get<wbr>Local</a>
+						<a href="device.scrollcursorintoview.html#iselementinviewport" class="tsd-kind-icon">is<wbr>Element<wbr>InViewport</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="_util_initialstate_native_.html#initialstate" class="tsd-kind-icon">initial<wbr>State</a>
+						<a href="device.scrollcursorintoview.html#scrollcursorintoview" class="tsd-kind-icon">scroll<wbr>Cursor<wbr>Into<wbr>View</a>
 					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="_util_initialstate_native_.html#initialthoughts" class="tsd-kind-icon">initial<wbr>Thoughts</a>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<a href="device.scrollcursorintoview.html#scrollintoviewifneeded" class="tsd-kind-icon">scroll<wbr>Into<wbr>View<wbr>IfNeeded</a>
 					</li>
 				</ul>
 			</nav>
